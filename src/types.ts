@@ -2,13 +2,10 @@ export interface Answer {
     id: string;
     content: string;
 }
-
-export interface QuestionProps {
-    num: number;
-
+export interface Question {
+    number: number;
     content: string;
-    validAnswerId: string;
     answers: Answer[];
+    validAnswerId: string;
     comment: string;
-
 }
